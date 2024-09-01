@@ -1,0 +1,24 @@
+.file-input-container {
+    position: relative;
+}
+.input-container input {
+    display: none !important;
+}
+.file-input-container label {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.file-input-container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-input-container.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
